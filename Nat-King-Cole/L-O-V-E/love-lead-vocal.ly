@@ -65,7 +65,7 @@ vcl = \relative c'' {
 }
 
 \book{
-  \bookOutputSuffix "Violin"
+  \bookOutputSuffix "lead-vocal"
   \header {
       title = \markup { \fontsize #3 \bold "L-O-V-E"}
       composer = \markup {
