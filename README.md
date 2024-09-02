@@ -4,6 +4,8 @@ Music sheets written in lilypond. Songs transcribed by ear and shared for free
 Most of the music sheets available are vocal harmonies, but there are also trumpets, violins, saxophone, drums parts. If you're planning a wedding we've got everything you need!
 Here is an overview of the catalog :
 
+- Alpagone
+    - Fior Di Latte : violins, trumpet, saxophone
 - Buddy Holly
     - Lonesome Tears : back vocals
 - David Bowie
