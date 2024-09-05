@@ -8,6 +8,8 @@ Here is an overview of the catalog :
     - Fior Di Latte : violins, trumpet, saxophone
 - Buddy Holly
     - Lonesome Tears : back vocals
+- Darío Restrepo
+    - La Cumbia Del Mar Adentro : clarinet, accordion, piano, vocals
 - David Bowie
     - Soul Love : trumpet, saxophone
 - Gush
