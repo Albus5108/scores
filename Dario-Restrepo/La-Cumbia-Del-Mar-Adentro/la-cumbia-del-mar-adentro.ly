@@ -17,8 +17,15 @@
 % ***** Accords *****
 chrd = \chordmode { 
   \partial 8 s8 | s1*3
-  s2 e2:7 | a2:m e2:7 | a2:m e2:7 | a2:m e2:7 |
+  \time 2/4
+  s2 
+  \time 4/4
+  e2:7 a2:m 
+  e2:7 a2:m 
+  e2:7 a2:m 
+  e2:7 a2:m
   a1*4:m
+  
   a2:m g2 f: e:
   a2:m g2 f: e:
 
@@ -32,22 +39,16 @@ global = {
 }
 
 % ***** Vocals ***** 
-
 \include "la-cumbia-del-mar-adentro-vocals.ly"
-
-
 % ***** Violoncelles ***** 
 
+% ***** Piano ***** 
+\include "la-cumbia-del-mar-adentro-piano.ly"
 % \include "fior-di-latte-cello.ly"
-
 % ***** Accordion ***** 
-
 \include "la-cumbia-del-mar-adentro-accordion.ly"
-
 % ***** Clarinet *****
-
 \include "la-cumbia-del-mar-adentro-clarinet.ly"
-
 
 %{
 **************************
@@ -100,7 +101,31 @@ global = {
 % 	  \cello
 %      }	
      >>
+     
+     \new PianoStaff <<
+       \set PianoStaff.instrumentName = #"Piano"
+       \set PianoStaff.midiInstrument = #"acoustic grand"
+       \new Staff = "up" {
+         \context Voice = voiceA \pianoUpchannelA
+         << 
+            {\context Voice = voiceB \pianoUpchannelB}
+%            \\
+%            {\context Voice = voiceC \pianoUpchannelC}
+          >>
+       }
+       \new Staff = "down" {
+         \clef bass
+         % \context Voice = voiceA \pianoDownchannelA
+%          <<
+%            {\context Voice = voiceB \pianoDownchannelB}
+%            \\
+%            {\context Voice = voiceC \pianoDownchannelC}
+%          >>
+       }
+     >>
+
      \new StaffGroup = "StaffGroup_brass" <<
+     
       \new Staff \relative c' {
 	  \set Staff.instrumentName = #"Accordion"
 	  \set Staff.midiInstrument = #"accordion"

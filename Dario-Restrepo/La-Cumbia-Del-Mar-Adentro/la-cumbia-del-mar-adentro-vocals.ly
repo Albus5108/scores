@@ -8,9 +8,13 @@ vocals_intro = \relative c' {
 vocals_theme = \relative c' {
   \mark \markup \center-column { \box "Theme" }
   % accordeon
-  R1*8
+  \time 2/4
+  r2
+  \time 4/4
+  R1*7
   % chant
-  r16 e a c e16 e8 e16 f8 e16 d~ d d8 d16 e8 d16 c~ c c8 c16 d8 c16 b~ b4
+   r2 r4 r16 e a c |  e16 e8 e16 f8 e16 d~ d d8 d16 e8 d16 c~ c c8 c16 d8 c16 b~ b4 r16 e, a c |
+   e16 e8 e16 f8 e16 d~ d d8 d16 e8 d16 c~ c c8 c16 d8 c16 b~ b4 r4 |
   % \repeat "volta" 2 {
 %     \time 4/4 a'8 c8~ c4 r4 r8 f,16 e~ |
 %   }
@@ -59,14 +63,12 @@ vocals = \relative c'' {
   \score {
     <<
       \chords {
-        \transposition ees
-        \transpose ees c' { \chrd }
+        \chrd
       }
       \new StaffGroup <<
         \new Staff \relative c' {
           \set Staff.instrument="Vocals"
-          \transposition ees
-          \transpose ees c' { \vocals }
+          \vocals
         }
       >>
       

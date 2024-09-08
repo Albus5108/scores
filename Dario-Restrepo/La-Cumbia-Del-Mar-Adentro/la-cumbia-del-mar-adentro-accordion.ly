@@ -8,10 +8,13 @@ accordion_intro = \relative c' {
 accordion_theme = \relative c' {
   \mark \markup \center-column { \box "Theme" }
   % accordeon
-  r8. e16 a8. e16 gis8. gis16 b gis b gis |
-  \repeat "percent" 3 {a8. e16 a8. e16 gis8. gis16 b gis b gis |}
-  a8. e16 a8 c16 e~ e e8 e16 d8 c16 a~ | a4 r4 r2 |
-  r8. e16 a8 c16 e~ e e8 e16 d8 c16 a~ | a4 r4 r2 |
+  \time 2/4
+  r8. e16 a8. e16 
+  \time 4/4
+  \repeat "percent" 3 { gis8. gis16 b gis b gis a8. e16 a8. e16 }
+  gis8. gis16 b gis b gis
+  a8. e16 a8 c16 e~ e e8 e16 d8 c | a4 r4 r2 |
+  r8. e16 a8 c16 e~ e e8 e16 d8 c | a4 r4 r2 |
   % chant
   R1*2
   % \repeat "volta" 2 {
