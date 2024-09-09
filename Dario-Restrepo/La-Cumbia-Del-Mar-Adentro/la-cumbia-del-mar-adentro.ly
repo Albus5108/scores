@@ -17,17 +17,27 @@
 % ***** Accords *****
 chrd = \chordmode { 
   \partial 8 s8 | s1*3
-  \time 2/4
-  s2 
-  \time 4/4
+  \repeat "volta" 2 {
+  %accordion
   e2:7 a2:m 
   e2:7 a2:m 
   e2:7 a2:m 
   e2:7 a2:m
   a1*4:m
-  
+  %chant
   a2:m g2 f: e:
-  a2:m g2 f: e:
+  a2:m g2 
+  }
+  \alternative{
+    {
+    f2: e2:
+  } {
+    f2: e2:
+  }
+  }
+  %clarinet
+  a1:m g2: a2:m
+  a1:m e2:m a2:m
 
 }
 

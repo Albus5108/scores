@@ -2,31 +2,30 @@
 % ***** Accordion *****
 
 accordion_intro = \relative c' {
-  \partial 8 r8 | R1*3
+  \partial 8 r8 | R1*2 | r2 r8. e16 a8. e16 
 }
 
 accordion_theme = \relative c' {
   \mark \markup \center-column { \box "Theme" }
+  \repeat "volta" 2 {
   % accordeon
-  \time 2/4
-  r8. e16 a8. e16 
-  \time 4/4
-  \repeat "percent" 3 { gis8. gis16 b gis b gis a8. e16 a8. e16 }
+  \repeat "percent" 3 { gis'8. gis16 b gis b gis a8. e16 a8. e16 }
   gis8. gis16 b gis b gis
-  a8. e16 a8 c16 e~ e e8 e16 d8 c | a4 r4 r2 |
-  r8. e16 a8 c16 e~ e e8 e16 d8 c | a4 r4 r2 |
+  a8. e16 a8 c16 e~ e e8 e16 d8 c a4 r4 r2 |
+  r8. e16 a8 c16 e~ e e8 e16 d8 c a4 r4 | r1 |
   % chant
-  R1*2
-  % \repeat "volta" 2 {
-%     \time 4/4 a'8 c8~ c4 r4 r8 f,16 e~ |
-%   }
-%   \alternative{
-%     {
-%     e8
-%   } {
-%     e8
-%   }
-%   }
+  a16 c8 a16 c8 a g16 b8 g16 b4 | f16 a8 f16 a8 f e16 gis8 e16 e gis e8 |
+  a16 c8 a16 c8 a g16 b8 g16 b4 | 
+  }
+  \alternative{
+    {
+    f16 a8 f16 a8 f r8. e16 a8. e16 |
+  } {
+    f16 a8 f16 a8 f <e gis>4 r4 |
+  }
+  }
+  % clarinet
+
   
 }
 

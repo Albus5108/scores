@@ -2,25 +2,30 @@
 % ***** Clarinet *****
 
 clarinet_intro = \relative c' {
-  \partial 8 e'8 | a4 c8 a g a g e | g e d e d c d c | a1\fermata
+  \partial 8 e'8 | a4~ \tuplet 3/2 {a8 c8 a} \tuplet 3/2 {g8 a g} \tuplet 3/2 {e g e} \tuplet 3/2 {d e d} c8 d c a~ a4~| a2\fermata r2
 }
 
 clarinet_theme = \relative c' {
   \mark \markup \center-column { \box "Theme" }
+  \repeat "volta" 2 {
   % accordeon
   R1*8
   % chant
-  R1*2
-  % \repeat "volta" 2 {
-%     \time 4/4 a'8 c8~ c4 r4 r8 f,16 e~ |
-%   }
-%   \alternative{
-%     {
-%     e8
-%   } {
-%     e8
-%   }
-%   }
+  R1*3
+  }
+  \alternative{
+    {
+    R1 |
+  } {
+    R1 |
+  }
+  }
+  % clarinet
+  e'16 e e e d8 f e8. a,16 c8 e | g4 e8 c16 a~ a4 r4 |
+  e'16 e e e d8 f e8. a,16 c8 e | g4 e8 c16 a~ a8. a'16 g a g e |
+  % clarinet motif 2
+  a8.-- a16 g a g e a8 r16 a16 g a g e | a8.-- a16 g a g e a8 r16 e16 d e d c
+  e8.-- e16 d e d c e8 r16 e16 d e d c | e8.-- g16 e g e d c2 |
   
 }
 
