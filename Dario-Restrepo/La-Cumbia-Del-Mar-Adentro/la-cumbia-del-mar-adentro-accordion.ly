@@ -25,8 +25,11 @@ accordion_theme = \relative c' {
   }
   }
   % clarinet
-
+  R1*8
   
+  %percussions
+
+  R1*9 | \time 2/4 r8. e16 a8. e16 \time 4/4
 }
 
 accordion_outro = \relative c'' {

@@ -36,8 +36,13 @@ chrd = \chordmode {
   }
   }
   %clarinet
-  a1:m g2: a2:m
   a1:m e2:m a2:m
+  a1:m e2:m a2:m |
+  
+  e2:m a2:m e2:m a2:m
+  e2:m a2:m e2:m a2:m
+  
+  s1*9 s1
 
 }
 

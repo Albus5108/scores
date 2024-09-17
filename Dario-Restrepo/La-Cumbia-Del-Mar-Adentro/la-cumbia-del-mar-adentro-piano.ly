@@ -28,7 +28,14 @@ pianoUpchannelA_theme = \relative c' {
   }
   }
   %clarinet
+  r8 a8 r4 r8 a8 r4 | r8 e8 r8 e8 r8 a8 r8 a8 |
+  r8 a8 r8 a r8 a8 r8 a | r8 e8 r8 e8 r8 a8 r8 a8 |
   
+  r8 e8 r8 e8 r8 a8 r8 a8 | r8 e8 r8 e8 r8 a8 r8 a8 |
+  r8 e8 r8 e8 r8 a8 r8 a8 | r8 e8 r8 e8 r8 a8 r8 a8 |
+  
+  % Percussions
+  R1*9 \time 2/4 r2 \time 4/4
 }
 
 pianoUpchannelB_theme = \relative c' {
