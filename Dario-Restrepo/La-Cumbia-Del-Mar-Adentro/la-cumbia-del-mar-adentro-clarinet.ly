@@ -1,4 +1,4 @@
-\version "2.20.0"
+\version "2.23.6"
 % ***** Clarinet *****
 
 clarinet_intro = \relative c' {
@@ -7,6 +7,7 @@ clarinet_intro = \relative c' {
 
 clarinet_theme = \relative c' {
   \mark \markup \center-column { \box "Theme" }
+  \repeat "segno" 2 {
   \repeat "volta" 2 {
   % accordeon
   R1*8
@@ -27,21 +28,26 @@ clarinet_theme = \relative c' {
   a8.-- a16 g a g e a8 r16 a16 g a g e | a8.-- a16 g a g e a8 r16 e16 d e d c
   e8.-- e16 d e d c e8 r16 e16 d e d c | e8.-- g16 e g e d c2 |
   
-}
-
-clarinet_outro = \relative c'' {
-  \mark \markup \center-column { \box "Outro" }
+  %percussions
+  R1*9 | \time 2/4 r2 \time 4/4
+  }
+  
   
 }
+
+% clarinet_outro = \relative c'' {
+%   \mark \markup \center-column { \box "Outro" }
+%   
+% }
 
 clarinet = \relative c'' {
   \global
   % Intro 
   \clarinet_intro 
   % Verse 1 et 2  
-  \clarinet_theme \bar"||"
+  \clarinet_theme \bar"|."
   % Outro
-  \clarinet_outro \bar"|."
+  %\clarinet_outro \bar"|."
   
 }
 
@@ -64,8 +70,8 @@ clarinet = \relative c'' {
   \score {
     <<
       \chords {
-        \transposition ees
-        \transpose ees c' { \chrd }
+        \transposition bes
+        \transpose bes c' { \chrd }
       }
       \new StaffGroup <<
         \new Staff \relative c' {

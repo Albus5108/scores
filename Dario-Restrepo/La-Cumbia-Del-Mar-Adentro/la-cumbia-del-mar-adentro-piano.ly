@@ -7,6 +7,7 @@ pianoUpchannelA_intro = \relative c' {
 
 pianoUpchannelA_theme = \relative c' {
   \mark \markup \center-column { \box "Theme" }
+  \repeat "segno" 2 {
   \repeat "volta" 2 {
   % accordeon
   e''16 b gis e16 e'16 b gis e16 e'16 c a e16 e'16 c a e16 
@@ -36,6 +37,7 @@ pianoUpchannelA_theme = \relative c' {
   
   % Percussions
   R1*9 \time 2/4 r2 \time 4/4
+  }
 }
 
 pianoUpchannelB_theme = \relative c' {
@@ -62,19 +64,19 @@ pianoUpchannelB_theme = \relative c' {
   %clarinet
 }
 
-pianoUpchannelA_outro = \relative c'' {
-  \mark \markup \center-column { \box "Outro" }
-  
-}
+% pianoUpchannelA_outro = \relative c'' {
+%   \mark \markup \center-column { \box "Outro" }
+%   
+% }
 
 pianoUpchannelA = \relative c'' {
   \global
   % Intro 
   \pianoUpchannelA_intro 
   % Verse 1 et 2  
-  \pianoUpchannelA_theme \bar"||"
+  \pianoUpchannelA_theme \bar"|."
   % Outro
-  \pianoUpchannelA_outro \bar"|."
+  %\pianoUpchannelA_outro \bar"|."
   
 }
 

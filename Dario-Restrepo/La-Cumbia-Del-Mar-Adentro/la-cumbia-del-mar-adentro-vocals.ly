@@ -7,6 +7,7 @@ vocals_intro = \relative c' {
 
 vocals_theme = \relative c' {
   \mark \markup \center-column { \box "Theme" }
+  \repeat "segno" 2 {
   \repeat "volta" 2 {
   % accordeon
   R1*7
@@ -23,21 +24,25 @@ vocals_theme = \relative c' {
   }
   %clarinet
   R1*8
-}
-
-vocals_outro = \relative c'' {
-  \mark \markup \center-column { \box "Outro" }
+  % Percussions
+  R1*9 \time 2/4 r2 \time 4/4
+  }
   
 }
+
+% vocals_outro = \relative c'' {
+%   \mark \markup \center-column { \box "Outro" }
+%   
+% }
 
 vocals = \relative c'' {
   \global
   % Intro 
   \vocals_intro 
   % Verse 1 et 2  
-  \vocals_theme \bar"||"
+  \vocals_theme \bar"|."
   % Outro
-  \vocals_outro \bar"|."
+  %\vocals_outro \bar"|."
   
 }
 
@@ -52,7 +57,7 @@ vocals = \relative c'' {
         }
       }
       subtitle = ""
-      instrument = "Saxophone Eb"
+      instrument = "Vocals"
       % opus = "Op. 9"
       copyright= \markup { "Arthur Petit - Copyright 2024" \char ##x00A9 }
       tagline=##f

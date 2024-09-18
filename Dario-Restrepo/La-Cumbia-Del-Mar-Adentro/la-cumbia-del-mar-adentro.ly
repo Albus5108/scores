@@ -1,4 +1,4 @@
-\version "2.20.0"
+\version "2.23.6"
 
 % \paper {
 %   #(define dump-extents #t)
@@ -39,8 +39,8 @@ chrd = \chordmode {
   a1:m e2:m a2:m
   a1:m e2:m a2:m |
   
-  e2:m a2:m e2:m a2:m
-  e2:m a2:m e2:m a2:m
+  e2: a2:m e2: a2:m
+  e2: a2:m e2: a2:m
   
   s1*9 s1
 

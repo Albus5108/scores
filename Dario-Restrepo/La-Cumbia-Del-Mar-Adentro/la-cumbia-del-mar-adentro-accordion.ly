@@ -1,4 +1,4 @@
-\version "2.20.0"
+\version "2.23.6"
 % ***** Accordion *****
 
 accordion_intro = \relative c' {
@@ -7,6 +7,7 @@ accordion_intro = \relative c' {
 
 accordion_theme = \relative c' {
   \mark \markup \center-column { \box "Theme" }
+  \repeat "segno" 2 {
   \repeat "volta" 2 {
   % accordeon
   \repeat "percent" 3 { gis'8. gis16 b gis b gis a8. e16 a8. e16 }
@@ -30,21 +31,23 @@ accordion_theme = \relative c' {
   %percussions
 
   R1*9 | \time 2/4 r8. e16 a8. e16 \time 4/4
-}
-
-accordion_outro = \relative c'' {
-  \mark \markup \center-column { \box "Outro" }
+  }
   
 }
+
+% accordion_outro = \relative c'' {
+%   \mark \markup \center-column { \box "Outro" }
+%   
+% }
 
 accordion = \relative c'' {
   \global
   % Intro 
   \accordion_intro 
   % Verse 1 et 2  
-  \accordion_theme \bar"||"
+  \accordion_theme \bar"|."
   % Outro
-  \accordion_outro \bar"|."
+  %\accordion_outro \bar"|."
   
 }
 
@@ -67,8 +70,8 @@ accordion = \relative c'' {
   \score {
     <<
       \chords {
-        \transposition ees
-        \transpose ees c' { \chrd }
+        %\transposition ees
+        \chrd % \transpose ees c' {  }
       }
       \new StaffGroup <<
         \new Staff \relative c' {
