@@ -95,12 +95,18 @@ global = {
                 %\transposition bes
                 \chrd
             }
-     \new Staff \relative c' {
-	  \set Staff.instrumentName = #"Vocals"
-	  \set Staff.midiInstrument = #"voice oohs"
-	  %\compressFullBarRests
-	  \vocals
-     }
+     \new Staff <<
+          \new Voice = "one" {
+            \relative c' {
+              \set Staff.instrumentName = #"Vocals"
+              \set Staff.midiInstrument = #"voice oohs"
+              \vocals
+            }
+          }
+        >>
+        \new Lyrics \with {
+          \override VerticalAxisGroup #'staff-affinity = #CENTER
+        } \lyricsto "one" \vocal_lyrics
      \new StaffGroup = "StaffGroup_strings" <<
       % \new Staff \relative c' {
 % 	  \set Staff.instrumentName = #"Violin 1"

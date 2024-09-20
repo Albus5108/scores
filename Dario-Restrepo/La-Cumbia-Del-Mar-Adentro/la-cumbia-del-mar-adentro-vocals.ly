@@ -53,6 +53,17 @@ vocals = \relative c'' {
   
 }
 
+vocal_lyrics = \lyricmode {
+  Eso es la cum- bia del mar a- den- tro
+  la mas a- bro- za pa- ra bai- lar
+  
+  Eso es la cum- bia del mar a- den- tro
+  la mas a- bro- za pa- ra bai- lar
+  
+  % 2nd vez
+  bro- za pa- ra bai- lar
+}
+
 \book{
   \bookOutputSuffix "Vocals"
   \header {
@@ -75,10 +86,17 @@ vocals = \relative c'' {
         \chrd
       }
       \new StaffGroup <<
-        \new Staff \relative c' {
-          \set Staff.instrument="Vocals"
-          \vocals
-        }
+        \new Staff <<
+          \new Voice = "one" {
+            \relative c' {
+              \set Staff.instrument="Vocals"
+              \vocals
+            }
+          }
+        >>
+        \new Lyrics \with {
+          \override VerticalAxisGroup #'staff-affinity = #CENTER
+        } \lyricsto "one" \vocal_lyrics
       >>
       
       
