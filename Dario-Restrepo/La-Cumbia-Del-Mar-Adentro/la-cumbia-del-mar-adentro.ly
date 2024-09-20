@@ -49,7 +49,7 @@ chrd = \chordmode {
 global = {
   \time 4/4
   \key a \minor
-  \tempo 4=100
+  \tempo 4=95
   %\compressFullBarRests % compress rest bars
 }
 
@@ -122,11 +122,11 @@ global = {
        \set PianoStaff.midiInstrument = #"acoustic grand"
        \new Staff = "up" {
          \context Voice = voiceA \pianoUpchannelA
-         << 
-            {\context Voice = voiceB \pianoUpchannelB}
+%         << 
+%            {\context Voice = voiceB \pianoUpchannelB}
 %            \\
 %            {\context Voice = voiceC \pianoUpchannelC}
-          >>
+%          >>
        }
        \new Staff = "down" {
          \clef bass
@@ -159,6 +159,6 @@ global = {
    >>
    
     \layout {}
-    \midi{ \tempo 4 = 100  }
+    \midi{ \tempo 4 = 95  }
   }
 }

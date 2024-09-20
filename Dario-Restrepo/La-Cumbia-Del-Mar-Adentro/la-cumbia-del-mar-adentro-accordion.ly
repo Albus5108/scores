@@ -28,7 +28,9 @@ accordion_theme = \relative c' {
   % clarinet
   R1*8
   
-  %percussions
+  \mark \markup \small "Fine" 
+  \bar"||"
+  % Percussions
   R1*4
   \time 3/4 r2.
   \time 4/4 
@@ -86,7 +88,7 @@ accordion = \relative c'' {
       
       
     >>    
-    \midi{ \tempo 4 = 70  } 
+    \midi{ \tempo 4 = 95  } 
     \layout {} 
   }
 }

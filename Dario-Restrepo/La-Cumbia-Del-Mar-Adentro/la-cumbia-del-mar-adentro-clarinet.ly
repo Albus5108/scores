@@ -28,7 +28,9 @@ clarinet_theme = \relative c' {
   a8.-- a16 g a g e a8 r16 a16 g a g e | a8.-- a16 g a g e a8 r16 e16 d e d c
   e8.-- e16 d e d c e8 r16 e16 d e d c | e8.-- g16 e g e d c2 |
   
-  %percussions
+  \mark \markup \small "Fine" 
+  \bar"||"
+  % Percussions
   R1*4
   \time 3/4 r2.
   \time 4/4 
@@ -88,7 +90,7 @@ clarinet = \relative c'' {
       
       
     >>    
-    \midi{ \tempo 4 = 70  } 
+    \midi{ \tempo 4 = 95  } 
     \layout {} 
   }
 }

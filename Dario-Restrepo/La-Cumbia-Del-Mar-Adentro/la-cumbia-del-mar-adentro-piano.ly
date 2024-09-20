@@ -13,30 +13,31 @@ pianoUpchannelA_theme = \relative c' {
   e''16 b gis e16 e'16 b gis e16 e'16 c a e16 e'16 c a e16 
   e'16 b gis e16 e'16 b gis e16 e'16 c a e16 e'16 c a e16 
   e'16 b gis e16 e'16 b gis e16 e'16 c a e16 e'16 c a e16 
-  e'16 b gis e16 e'16 b gis e16 c16 e16 a c e4 r8 e4. |
+  e'16 b gis e16 e'16 b gis e16 c16 e16 a c e4 r8 <a, c e>4. |
   \ottava 1
-  r8. e16 a8 c16 e~ e e8 e16 d8 c16 a~ | a4 r4 r2 |
-  r8. e16 a8 c16 e~ e e8 e16 d8 c |  a8 e16 e e4 |
+  r8. <e e'>16 <a a'>8 <c c'>16 <e e'>~ q q8 q16 <d d'>8 <c c'>16 <a a'>~ | q4 r4 r2 |
+  r8. <e e'>16 <a a'>8 <c c'>16 <e e'>~ q q8 q16 <d d'>8 <c c'>16 <a a'>~ | q8 <e a e'>16 q q4 |
   \ottava 0
   
   % chant
-  e,8. e16 e8. d16~ d16 d8 d16 d4 | c8. c16~ c8. b16~ b4 r4
-  e8. e16~ e16 e e8 r16 d8 d16 d4 | 
+  <a,, c e>8. q16 q8. <g b d>16~ q16 q8 q16 q4 | <f a c>8. q16~ q8. <e gis b>16~ q4 r4
+  <a c e>8. q16~ q16 q q8 r16 <g b d>8 q16 q4 | 
   }
   \alternative{
     {
-    c8. c16 c c8. b4 r4
+    <f a c>8. q16 q q8. <e gis b>4 r4
   } {
-    c8. c16 c c8. b4 r4
+    <f a c>8. q16 q q8. <e gis b>4 r4
   }
   }
   %clarinet
-  r8 a8 r4 r8 a8 r4 | r8 e8 r8 e8 r8 a8 r8 a8 |
-  r8 a8 r8 a r8 a8 r8 a | r8 e8 r8 e8 r8 a8 r8 a8 |
+  r8 <c' e a>8 r4 r8 q8 r4 | r8 <b e>8 r8 q8 r8 <c e a>8 r8 q8 |
+  r8 <c e a>8 r8 q r8 q8 r8 q | r8 <b e>8 r8 q8 r8 <c e a>8 r8 q8 |
   
-  r8 e8 r8 e8 r8 a8 r8 a8 | r8 e8 r8 e8 r8 a8 r8 a8 |
-  r8 e8 r8 e8 r8 a8 r8 a8 | r8 e8 r8 e8 r8 a8 r8 a8 |
+  r8 <b e>8 r8 q8 r8 <e a>8 r8 q8 | r8 <b e>8 r8 q8 r8 <e a>8 r8 q8 |
+  r8 <b e>8 r8 q8 r8 <e a>8 r8 q8 | r8 <b e>8 r8 q8 r8 <e a>8 r8 q8 |
   
+  \bar"||"
   % Percussions
   R1*4
   \time 3/4 r2.
@@ -47,53 +48,12 @@ pianoUpchannelA_theme = \relative c' {
   }
 }
 
-pianoUpchannelB_theme = \relative c' {
-  \mark \markup \center-column { \box "Theme" }
-  \repeat "volta" 2 {
-  % accordeon
-  s1 |
-  s1 |
-  s1 |
-  s1 |
-  s2 s8 c'4. |
-  r8. e16 a8 c16 e~ e e8 e16 d8 c16 a~ | a4 r4 r2 |
-  r8. e16 a8 c16 e~ e e8 e16 d8 c16 a~ | a4 r4 r2 |
-  % chant
-  s1*4
-  }
-  \alternative{
-    {
-    s1
-  } {
-    s1
-  }
-  }
-  %clarinet
-}
-
-% pianoUpchannelA_outro = \relative c'' {
-%   \mark \markup \center-column { \box "Outro" }
-%   
-% }
-
 pianoUpchannelA = \relative c'' {
   \global
   % Intro 
   \pianoUpchannelA_intro 
-  % Verse 1 et 2  
+  % Theme
   \pianoUpchannelA_theme \bar"|."
-  % Outro
-  %\pianoUpchannelA_outro \bar"|."
-  
-}
-
-pianoUpchannelB = \relative c'' {
-  %\global
-  % Intro 
-  %\pianoUpchannelA_intro 
-  % Verse 1 et 2  
-  %\pianoUpchannelB_theme \bar"||"
-  % Outro
   
 }
 
@@ -127,6 +87,8 @@ pianoDownchannelA_theme = \relative c' {
   e a a a | e a a a |
   e b' a a | e a a a |
   
+  \mark \markup \small "Fine" 
+  \bar"||"
   % Percussions
   a a a a | a a e a |
   a a e a | a a e a |
@@ -174,11 +136,11 @@ pianoDownchannelA = \relative c {
       \new PianoStaff <<
        \new Staff = "up" {
          \context Voice = voiceA \pianoUpchannelA
-          << 
-            {\context Voice = voiceB \pianoUpchannelB}
+%          << 
+%            {\context Voice = voiceB \pianoUpchannelB}
 %            \\
 %            {\context Voice = voiceC \pianoUpchannelC}
-          >>
+%          >>
        }
        \new Staff = "down" {
          \clef bass
@@ -193,7 +155,7 @@ pianoDownchannelA = \relative c {
       
       
     >>    
-    \midi{ \tempo 4 = 70  } 
+    \midi{ \tempo 4 = 95  } 
     \layout {} 
   }
 }
