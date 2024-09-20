@@ -29,7 +29,12 @@ clarinet_theme = \relative c' {
   e8.-- e16 d e d c e8 r16 e16 d e d c | e8.-- g16 e g e d c2 |
   
   %percussions
-  R1*9 | \time 2/4 r2 \time 4/4
+  R1*4
+  \time 3/4 r2.
+  \time 4/4 
+  R1*4
+  \time 2/4
+  r2 
   }
   
   

@@ -130,7 +130,7 @@ global = {
        }
        \new Staff = "down" {
          \clef bass
-         % \context Voice = voiceA \pianoDownchannelA
+         \context Voice = voiceA \pianoDownchannelA
 %          <<
 %            {\context Voice = voiceB \pianoDownchannelB}
 %            \\

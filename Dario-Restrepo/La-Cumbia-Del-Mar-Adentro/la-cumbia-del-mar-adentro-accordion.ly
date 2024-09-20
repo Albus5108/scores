@@ -29,8 +29,12 @@ accordion_theme = \relative c' {
   R1*8
   
   %percussions
-
-  R1*9 | \time 2/4 r8. e16 a8. e16 \time 4/4
+  R1*4
+  \time 3/4 r2.
+  \time 4/4 
+  R1*4
+  \time 2/4
+  r8. e16 a8. e16 \time 4/4
   }
   
 }

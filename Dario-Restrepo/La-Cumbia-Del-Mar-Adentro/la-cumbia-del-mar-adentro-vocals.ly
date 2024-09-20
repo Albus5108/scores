@@ -25,7 +25,12 @@ vocals_theme = \relative c' {
   %clarinet
   R1*8
   % Percussions
-  R1*9 \time 2/4 r2 \time 4/4
+  R1*4
+  \time 3/4 r2.
+  \time 4/4 
+  R1*4
+  \time 2/4
+  r2 
   }
   
 }
