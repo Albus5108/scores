@@ -6,6 +6,7 @@ Here is an overview of the catalog :
 
 - Alpagone
     - Fior Di Latte : violins, trumpet, saxophone
+    - Intro : violins
 - Buddy Holly
     - Lonesome Tears : back vocals
 - Darío Restrepo
