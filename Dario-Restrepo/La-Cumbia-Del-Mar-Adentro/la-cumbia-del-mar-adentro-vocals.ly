@@ -54,14 +54,14 @@ vocals = \relative c'' {
 }
 
 vocal_lyrics = \lyricmode {
-  Eso es la cum- bia del mar a- den- tro
-  la mas a- bro- za pa- ra bai- lar
+  Esta es la cum- bia del mar a- den- tro
+  la más sa- bro- sa pa- ra bai- lar
   
-  Eso es la cum- bia del mar a- den- tro
-  la mas a- bro- za pa- ra bai- lar
+  Esta es la cum- bia del mar a- den- tro
+  la más sa- bro- sa pa- ra bai- lar
   
   % 2nd vez
-  bro- za pa- ra bai- lar
+  bro- sa pa- ra bai- lar
 }
 
 \book{
