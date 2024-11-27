@@ -13,13 +13,13 @@ vln_tutti = \relative c'' {
   }
   \repeat "volta" 2 {
     r4^"Tutti"-\f b'8\bendAfter -4 r8 r8 fis8-. gis-- a-. | r2 b16 d e r16 r4 | r8 b8-. d16-- b8-. b16-. r4  r8 a8-. | r2  fis8-- d'-. e16-- e16-- d-. r16 |
-    r4 b8\bendAfter -4 r8 r8 fis8-. gis-- a-. | r2 b16 d e r16 r4 | r4 b16 g a8 r4 r8 b8-. | 
-  } 
+    r4 b8\bendAfter -4 r8 r8 fis8-. gis-- a-. | r2 b16 d e r16 r4 | r4 r8 b16 b r4 r8 a8-. | 
+  }
   \alternative{
     {
-      r2  fis8-- d'-. e16-- d-. r8 | 
+      r2  fis8-- d'-. e16-- d-. b8 | 
   } {
-    r2  fis,8-- d'-. e8-- r8 | \bar "||"
+    r2  fis8-- d'-. e8-- r8 | \bar "||"
   }}
   
   
@@ -36,10 +36,10 @@ vln_tutti = \relative c'' {
   \compressMMRests {
     R1*7  \bar"||" R1*2 |
   }
-  r8 a16 b r4 r2 |
+  R1 % r8 a16 b r4 r2 |
   \compressMMRests {R1*4 |} 
-  r4 d8\< e4-- d4.-- 
-  b4->-\f r4 r2 |
+  R1 % r4 d8\< e4-- d4.-- 
+  R1 % b4->-\f r4 r2 |
   
 }
 
