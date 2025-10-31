@@ -12,14 +12,14 @@ vln_tutti = \relative c'' {
   R1*8 \bar"||" R1*24 |
   }
   \repeat "volta" 2 {
-    r4^"Tutti"-\f b'8\bendAfter -4 r8 r8 fis8-. gis-- a-. | r2 b16 d e r16 r4 | r8 b8-. d16-- b8-. b16-. r4  r8 a8-. | r2  fis8-- d'-. e16-- e16-- d-. r16 |
+    r4^"Tutti"-\f b'8\bendAfter -4 r8 r8 fis8-. gis-- a-. | r2 b16 d e r16 r4 | r8 b8-. d16-- b8-. b16-. r4  r8 a8-. | r2  fis8-- d'-. e16-. d8.-> |
     r4 b8\bendAfter -4 r8 r8 fis8-. gis-- a-. | r2 b16 d e r16 r4 | r4 r8 b16 b r4 r8 a8-. | 
   }
   \alternative{
     {
       r2  fis8-- d'-. e16-- d-. b8 | 
   } {
-    r2  fis8-- d'-. e8-- r8 | \bar "||"
+    r2  fis8-- d'-. e16-. d8.-> | \bar "||"
   }}
   
   
