@@ -4,9 +4,11 @@ Music sheets written in lilypond. Songs transcribed by ear and shared for free
 Most of the music sheets available are vocal harmonies, but there are also trumpets, violins, saxophone, drums parts. If you're planning a wedding we've got everything you need!
 Here is an overview of the catalog :
 
+- Aldous & The Dumbledores
+    - Tout en Sifflotant : bass guitar, trumpet, piano
 - Alpagone
-    - Fior Di Latte : violins, trumpet, saxophone
-    - Intro : violins
+    - Iconical Love : violins, trumpet, saxophone
+    - Fresh Start : violins
 - Buddy Holly
     - Lonesome Tears : back vocals
 - Darío Restrepo
